@@ -4,54 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abdulrahman Ehab | ULTRA</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Reem Kufi',sans-serif}
 body{min-height:100vh;background:#020205;display:flex;justify-content:center;align-items:center;padding:20px;overflow:hidden;position:relative}
 canvas{position:absolute;top:0;left:0;width:100%;height:100%}
 .glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(124,58,237,0.4),transparent 70%);filter:blur(40px);animation:pulse 4s infinite}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
 .card{position:relative;z-index:10;width:100%;max-width:400px;background:rgba(10,10,15,0.6);backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,0.08);border-radius:36px;padding:36px 26px;text-align:center;box-shadow:0 0 100px rgba(124,58,237,0.3),inset 0 0 20px rgba(255,255,255,0.05);animation:cardIn 0.8s ease}
 @keyframes cardIn{from{transform:translateY(30px) scale(0.9);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
-.avatar{width:120px;height:120px;margin:0 auto 18px;background:conic-gradient(from 0deg,#7c3aed,#ec4899,#f59e0b,#7c3aed);border-radius:50%;padding:3px;animation:rotate 3s linear infinite}
+.avatar{width:120px;height:120px;margin:0 auto 18px;background:conic-gradient(from 0deg,#7c3aed,#ec4899,#f59e0b,#7c3aed);border-radius:50%;padding:3px;position:relative}
+.avatar::before{content:'';position:absolute;inset:-3px;background:conic-gradient(from 0deg,#7c3aed,#ec4899,#f59e0b,#7c3aed);border-radius:50%;animation:rotate 3s linear infinite;z-index:-1}
 .avatar-inner{width:100%;height:100%;background:linear-gradient(135deg,#7c3aed,#ec4899);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900;color:#fff}
 @keyframes rotate{to{transform:rotate(360deg)}}
-h1{color:#fff;font-size:30px;font-weight:900;display:flex;align-items:center;justify-content:center;gap:8px}
+h1{color:#fff;font-size:32px;font-weight:900;display:flex;align-items:center;justify-content:center;gap:8px}
 .verified{width:22px;height:22px;background:#1D9BF0;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;box-shadow:0 0 15px #1D9BF0}
-.type{color:#a78bfa;font-size:14px;height:20px;margin:6px 0 22px}
+.type{color:#a78bfa;font-size:14px;height:20px;margin:6px 0 22px;font-family:'Cairo',sans-serif}
 .badge{display:inline-block;background:linear-gradient(90deg,rgba(124,58,237,0.3),rgba(236,72,153,0.3));border:1px solid rgba(124,58,237,0.5);color:#d8b4fe;padding:5px 14px;border-radius:99px;font-size:11px;letter-spacing:1px;margin-bottom:20px;animation:shimmer 2s infinite}
 @keyframes shimmer{0%,100%{box-shadow:0 0 10px rgba(124,58,237,0.3)}50%{box-shadow:0 0 25px rgba(124,58,237,0.6)}}
 .links{display:flex;flex-direction:column;gap:13px}
 .link{position:relative;display:flex;align-items:center;justify-content:center;padding:17px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:18px;color:#fff;text-decoration:none;font-weight:700;transition:0.4s cubic-bezier(0.175,0.885,0.32,1.275)}
-.link:hover{transform:translateY(-3px) scale(1.03);background:rgba(255,255,255,0.1);box-shadow:0 15px 35px rgba(0,0,0,0.4);border-color:rgba(255,255,255,0.2)}
-.link.wa{background:linear-gradient(135deg,#25D366,#128C7E);border:0;box-shadow:0 0 20px rgba(37,211,102,0.3)}
-.link.wa:hover{box-shadow:0 10px 30px rgba(37,211,102,0.5)}
-</style>
-</head>
-<body>
-<div class="glow" style="top:-200px;left:-200px"></div><div class="glow" style="bottom:-200px;right:-200px;background:radial-gradient(circle,rgba(236,72,153,0.3),transparent 70%)"></div>
-<canvas id="stars"></canvas>
-<div class="card">
-<div class="avatar"><div class="avatar-inner">AE</div></div>
-<h1>Abdulrahman Ehab <span class="verified">✔</span></h1>
-<div class="type" id="type"></div>
-<span class="badge">✨ OFFICIAL LINKS ✨</span>
-<div class="links">
-<a class="link" href="https://www.tiktok.com/@Abdulrahman_Ehab37" target="_blank">TikTok 🎵</a>
-<a class="link" href="https://www.instagram.com/Abdulrahman_Ehab37" target="_blank">Instagram 📸</a>
-<a class="link" href="https://www.facebook.com/Abdulrahman.Ehab.37" target="_blank">Facebook 📘</a>
-<a class="link wa" href="https://wa.me/201210746111" target="_blank">@Abdulrahman_Ehab37 💬</a>
-<a class="link" href="tel:+201018496893">01018496893 📞</a>
-</div>
-</div>
-<script>
-// typing
-const texts=["Content Creator","Video Editor","TikToker"];
-let ti=0,ci=0,del=false;const el=document.getElementById('type');
-function type(){let cur=texts[ti];if(!del){el.textContent=cur.slice(0,ci++);if(ci>cur.length){del=true;setTimeout(type,1500);return}}else{el.textContent=cur.slice(0,ci--);if(ci<0){del=false;ti=(ti+1)%texts.length;ci=0}}setTimeout(type,del?40:80)}type();
-// stars
-const c=document.getElementById('stars'),x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;let s=[];for(let i=0;i<80;i++)s.push({x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*1.5,v:Math.random()*0.5});
-function draw(){x.clearRect(0,0,c.width,c.height);s.forEach(p=>{x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fillStyle='rgba(255,255,255,0.6)';x.fill();p.y-=p.v;if(p.y<0)p.y=c.height});requestAnimationFrame(draw)}draw();
-</script>
-</body>
-</html>
+.link:hover{transform:translateY(-3px) scale(1.03);background:rgba(255,255,
