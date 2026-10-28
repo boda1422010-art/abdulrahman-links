@@ -3,43 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Abdulrahman Ehab - CEO | Golden Hour</title>
+<title>Abdulrahman Ehab - CEO Golden Hour</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;background:radial-gradient(1200px 600px at 70% 20%, #fff6e3 0%, #ffeec6 15%, #ffffff 55%),linear-gradient(180deg,#ffffff,#fefefe);font-family:Inter,system-ui}
-.card{width:100%;max-width:440px;background:rgba(255,255,255,0.72);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(22px) saturate(1.4);border-radius:36px;padding:40px 28px 28px;text-align:center;border:1px solid rgba(255,255,255,0.9);box-shadow:0 20px 60px rgba(0,0,0,0.08),0 0 0 1px rgba(255,255,255,0.6) inset}
-.avatar{width:148px;height:148px;margin:0 auto 20px;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,0.9);background:#fff;box-shadow:0 10px 30px rgba(255,180,60,0.25),0 0 0 8px rgba(255,255,255,0.5)}
-.avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
-h1{font-size:32px;font-weight:900;color:#1a1a1a}
-.handle{color:#8a8a8a;margin:6px 0 6px;font-size:14px}
-.sub{color:#b8964a;letter-spacing:3px;font-size:11px;margin-bottom:28px;text-transform:uppercase;font-weight:700}
-.links{display:flex;flex-direction:column;gap:14px;perspective:1200px}
-.link{display:flex;justify-content:space-between;padding:18px 22px;background:rgba(255,255,255,0.75);border-radius:18px;color:#1a1a1a;text-decoration:none;font-weight:700;border:1px solid rgba(0,0,0,0.06);transform-style:preserve-3d;transition:all 0.25s cubic-bezier(0.34,1.56,0.64,1)}
-.link.suck{transform:perspective(900px) scale(1.12) translateZ(70px);border-color:#ffd67e;background:#fff;box-shadow:0 0 0 2px #ffd67e,0 0 25px rgba(255,214,126,0.6),0 25px 50px rgba(0,0,0,0.12)}
-.footer{font-size:9px;letter-spacing:3px;color:#aaa;margin-top:26px}
-</style>
-</head>
-<body>
-<div class="card">
-<div class="avatar"><img src="IMG-20261028-WA0030.jpg?v=gold1"></div>
-<h1>Abdulrahman Ehab</h1>
-<div class="handle">@Abdulrahman_Ehab37</div>
-<div class="sub">CEO • Golden Hour 2026</div>
-<div class="links">
-<a class="link" href="https://www.tiktok.com/@Abdulrahman_Ehab37">🎵 TikTok <span>↗</span></a>
-<a class="link" href="https://www.instagram.com/Abdulrahman_Ehab37">📸 Instagram <span>↗</span></a>
-<a class="link" href="https://www.facebook.com/Abdulrahman.Ehab.37">📘 Facebook <span>↗</span></a>
-<a class="link" href="https://wa.me/201210746111">💬 WhatsApp <span>↗</span></a>
-</div>
-<div class="footer">White Glass • Golden Cinematic • Suction</div>
-</div>
-<script>
-document.querySelectorAll('.link').forEach(b=>{
-b.addEventListener('touchstart',()=>b.classList.add('suck'));
-b.addEventListener('touchend',()=>setTimeout(()=>b.classList.remove('suck'),500));
-b.addEventListener('mouseenter',()=>b.classList.add('suck'));
-b.addEventListener('mouseleave',()=>b.classList.remove('suck'));
-});
-</script>
-</body>
-</html>
+body{
+min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;
+background:
+radial-gradient(800px 500px at 75% 15%, rgba(255,185,80,0.35) 0%, rgba(255,220,120,0.15) 30%, transparent 70%),
+radial-gradient(600px 400px at 20% 80%, rgba(120,80,30,0.2) 0%, transparent 60%),
+linear-gradient(180deg,#fef9ef 0%,#fff6e3 20%,#ffeec6 45%,#e8d5a8 100%);
+font-family:Inter,system-ui;
+overflow:hidden;
+}
+body::before{
+content:'';position:fixed;inset:0;
+background:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&blur=20') center/cover;
+filter:blur(22px) brightness(1.15) saturate(1.2);
+opacity:0.55;z-index:-2;
+}
+body::after{
+content:'';position:fixed;inset:0;
+background:linear-gradient(180deg,rgba(255,246,227,0.4) 0%, rgba(255,238,198,0.6) 100%);
+z-index:-1;
+}
+.card{
+width:100%;max-width:460px;
+background:rgba(255,255,255,0.62);
+backdrop-filter:blur(24px) saturate(1.5);
+-webkit-backdrop-filter:blur(24px) saturate(1.5);
+border-radius:32px;
+padding:42px 30px 30px;
+text-align:center;
+border:1.5px solid rgba(255,255,255,0.85);
+box-shadow:
+0 0 0 1px rgba(255,255,255,0.6) inset,
+0 20px 60px rgba(90,60,20,0.15),
+0 10px 25px rgba(90,60,20,0.1);
+transform:perspective(1200px) rotateY(-3deg) rotateX(3deg);
+transform-style:preserve-3d;
+}
+.avatar-wrap{
+width:132px;height:132px;margin:0 auto 22px;
