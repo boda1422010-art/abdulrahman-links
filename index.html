@@ -6,36 +6,8 @@
 <title>Abdulrahman Ehab</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;font-family:Inter,Arial;background:#f1f5f9}
-.card{width:100%;max-width:380px;background:#ffffff;border-radius:32px;padding:36px 26px 26px;text-align:center;box-shadow:0 20px 60px rgba(15,23,42,0.08);border:1px solid #e2e8f0}
-.avatar{width:110px;height:110px;margin:0 auto 18px;border-radius:50%;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,0.12);border:4px solid #f8fafc}
-.avatar img{width:100%;height:100%;object-fit:cover;object-position:top}
-h1{font-size:32px;letter-spacing:5px;font-weight:300;color:#0f172a;margin-bottom:6px}
-.sub{font-size:13px;color:#0f172a;font-weight:600;margin-bottom:2px}
-.small{font-size:11px;letter-spacing:2px;color:#64748b;text-transform:uppercase;margin:6px 0 18px}
-.divider{font-size:10px;letter-spacing:3px;color:#cbd5e1;margin:18px 0;line-height:1.8}
-.link{display:flex;align-items:center;gap:14px;padding:15px 22px;margin-bottom:12px;background:#f8fafc;border-radius:99px;color:#0f172a;text-decoration:none;font-weight:600;font-size:15px;border:1px solid #e2e8f0;transition:0.2s}
-.link:hover{background:#0f172a;color:#fff;border-color:#0f172a;transform:translateY(-1px)}
-.link.wa{background:#0f172a;color:#fff;border-color:#0f172a}
-.link.wa:hover{background:#1e293b}
-.ico{width:22px;text-align:center}
-.footer{font-size:10px;letter-spacing:3px;color:#94a3b8;margin-top:24px}
-</style>
-</head>
-<body>
-<div class="card">
-<div class="avatar"><img src="IMG-20261028-WA0030.jpg"></div>
-<h1>AE</h1>
-<div class="sub">Abdulrahman Ehab</div>
-<div class="small">@Abdulrahman_Ehab37</div>
-<div class="divider">— LINK IN BIO —</div>
-
-<a class="link" href="https://www.tiktok.com/@Abdulrahman_Ehab37"><span class="ico">🎵</span> TikTok</a>
-<a class="link" href="https://www.instagram.com/Abdulrahman_Ehab37"><span class="ico">📸</span> Instagram</a>
-<a class="link" href="https://www.facebook.com/Abdulrahman.Ehab.37"><span class="ico">📘</span> Facebook</a>
-<a class="link wa" href="https://wa.me/201210746111"><span class="ico">💬</span> WhatsApp</a>
-
-<div class="footer">ABDULRAHMAN EHAB</div>
-</div>
-</body>
-  </html>
+body{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;font-family:Inter,Arial;position:relative;overflow:hidden}
+.bg{position:fixed;inset:0;background:url('IMG-20261028-WA0030.jpg') center 20%/cover no-repeat;filter:blur(22px) brightness(1.15);transform:scale(1.15);z-index:-2}
+.bg::after{content:"";position:absolute;inset:0;background:rgba(255,255,255,0.35)}
+.card{width:100%;max-width:370px;background:rgba(255,255,255,0.72);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:28px;padding:32px 26px 24px;text-align:center;border:1px solid rgba(255,255,255,0.8);box-shadow:0 20px 60px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.9)}
+.avatar{width:112
