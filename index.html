@@ -1,39 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>A.E. Al-Taher | روابط التواصل</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdulrahman Ehab | Official Links</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:#050507;color:#fff;font-family:Tahoma,Arial,sans-serif;overflow:hidden}
-body::before{content:"";position:fixed;inset:-50%;background:radial-gradient(600px at 50% 0%, #ff0a2e33, transparent 70%), radial-gradient(500px at 90% 90%, #7a0a1a33, transparent);pointer-events:none}
-.card{width:min(92%,440px);padding:32px 24px;border:1px solid #2a1216;border-radius:28px;background:linear-gradient(180deg,#121214,#0a0a0c);box-shadow:0 0 0 1px #ff123633, 0 20px 80px #000;position:relative}
-.card::before{content:"";position:absolute;inset:-1px;border-radius:28px;padding:1px;background:linear-gradient(90deg,#ff1236,#2a2a2a,#ff1236);-webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.6}
-.mark{width:86px;height:86px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%, #ff2a4a, #8f0e22);font-size:34px;font-weight:900;box-shadow:0 0 30px #ff123688}
-h1{font-family:cursive;text-align:center;margin:0 0 8px;font-size:32px;letter-spacing:1px}
-.sub{text-align:center;color:#9aa0a6;margin:0 0 28px;font-size:14px}
-.links{display:grid;gap:14px}
-a.link{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;border-radius:14px;text-decoration:none;color:#fff;font-weight:700;border:1px solid #ffffff14;transition:.25s;backdrop-filter:blur(10px)}
-a.link:hover{transform:translateY(-2px) scale(1.01);box-shadow:0 10px 30px #0008}
-.wa{background:#0f2118;border-color:#1a4a2e;color:#a3ffbf}
-.phone{background:#211818;border-color:#4a1a1a}
-.fb{background:#101c32;border-color:#1a345a;color:#8ab4ff}
-.ig{background:linear-gradient(135deg,#2a1626,#1a1826);border-color:#4a2a4a;color:#ffb7e0}
-footer{text-align:center;margin-top:22px;color:#666;font-size:11px;line-height:1.8}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{min-height:100vh;background:#050507;display:flex;justify-content:center;align-items:center;padding:20px;overflow:hidden;position:relative}
+.orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:0.6;animation:float 8s infinite ease-in-out}
+.orb1{width:400px;height:400px;background:radial-gradient(circle,#7c3aed,#4f46e5);top:-100px;left:-100px}
+.orb2{width:350px;height:350px;background:radial-gradient(circle,#ec4899,#f59e0b);bottom:-80px;right:-80px;animation-delay:-4s}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-30px)}}
+.card{position:relative;width:100%;max-width:390px;background:rgba(15,15,20,0.7);backdrop-filter:blur(40px);border:1px solid rgba(255,255,255,0.1);border-radius:32px;padding:32px 24px;text-align:center;box-shadow:0 0 80px rgba(124,58,237,0.2)}
+.avatar{width:110px;height:110px;margin:0 auto 16px;background:linear-gradient(135deg,#7c3aed,#ec4899);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:900;color:#fff;box-shadow:0 0 30px rgba(236,72,153,0.5);border:3px solid rgba(255,255,255,0.2)}
+h1{color:#fff;font-size:28px;font-weight:900;letter-spacing:1px}
+.badge{display:inline-block;margin:8px 0 20px;background:rgba(124,58,237,0.2);border:1px solid rgba(124,58,237,0.4);color:#a78bfa;padding:4px 12px;border-radius:99px;font-size:12px}
+.links{display:flex;flex-direction:column;gap:12px}
+.link{position:relative;display:flex;align-items:center;justify-content:center;gap:8px;padding:16px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:16px;color:#fff;text-decoration:none;font-weight:700;transition:0.3s;overflow:hidden}
+.link::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);transition:0.6s}
+.link:hover::before{left:100%}
+.link:hover{transform:translateY(-2px) scale(1.02);background:rgba(255,255,255,0.12);box-shadow:0 10px 30px rgba(0,0,0,0.3)}
+.link.wa{background:linear-gradient(135deg,#25D366,#128C7E);border:0}
+.link.wa:hover{box-shadow:0 10px 30px rgba(37,211,102,0.4)}
+.foot{margin-top:20px;color:rgba(255,255,255,0.3);font-size:11px}
 </style>
 </head>
 <body>
-<main class="card">
-<div class="mark">AE</div>
-<h1>A.E. Al-Taher</h1>
-<p class="sub">اختار الطريقة اللي تحب تتواصل بيها معايا</p>
-<nav class="links">
+<div class="orb orb1"></div><div class="orb orb2"></div>
+<div class="card">
+<div class="avatar">AE</div>
+<h1>Abdulrahman Ehab</h1>
+<span class="badge">✨ OFFICIAL LINKS ✨</span>
+<div class="links">
+<a class="link" href="https://www.tiktok.com/@Abdulrahman_Ehab37" target="_blank">🎵 TikTok</a>
+<a class="link" href="https://www.instagram.com/Abdulrahman_Ehab37" target="_blank">📸 Instagram</a>
+<a class="link" href="https://www.facebook.com/Abdulrahman.Ehab.37" target="_blank">📘 Facebook</a>
 <a class="link wa" href="https://wa.me/201210746111" target="_blank">💬 <span dir="ltr">@Abdulrahman_Ehab37</span></a>
-<a class="link phone" href="tel:+201018496893">📞 اتصال هاتفي</a>
-<a class="link fb" href="https://www.facebook.com/share/1KFecHpoXf/" target="_blank">Facebook — فيسبوك</a>
-<a class="link ig" href="https://www.instagram.com/booodyy315?obrf=bWJ2OHFpc2VicnpS" target="_blank">Instagram — إنستجرام</a>
-</nav>
-<footer>صفحة روابط التواصل لعبدالرحمن الظاهر<br>روابط التواصل • أسود وأحمر</footer>
-</main>
+<a class="link" href="tel:+201018496893">📞 01018496893</a>
+</div>
+<div class="foot">© 2026 Abdulrahman Ehab - All Rights Reserved</div>
+</div>
 </body>
 </html>
