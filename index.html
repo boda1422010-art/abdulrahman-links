@@ -8,39 +8,58 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{
 min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;
-background:
-radial-gradient(800px 500px at 75% 15%, rgba(255,185,80,0.35) 0%, rgba(255,220,120,0.15) 30%, transparent 70%),
-radial-gradient(600px 400px at 20% 80%, rgba(120,80,30,0.2) 0%, transparent 60%),
-linear-gradient(180deg,#fef9ef 0%,#fff6e3 20%,#ffeec6 45%,#e8d5a8 100%);
+background:linear-gradient(180deg,#b8e6f0 0%, #d4f0f5 10%, #ffeec6 40%, #ffd88a 75%, #e6c07a 100%);
 font-family:Inter,system-ui;
-overflow:hidden;
-}
-body::before{
-content:'';position:fixed;inset:0;
-background:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&blur=20') center/cover;
-filter:blur(22px) brightness(1.15) saturate(1.2);
-opacity:0.55;z-index:-2;
-}
-body::after{
-content:'';position:fixed;inset:0;
-background:linear-gradient(180deg,rgba(255,246,227,0.4) 0%, rgba(255,238,198,0.6) 100%);
-z-index:-1;
 }
 .card{
-width:100%;max-width:460px;
-background:rgba(255,255,255,0.62);
-backdrop-filter:blur(24px) saturate(1.5);
--webkit-backdrop-filter:blur(24px) saturate(1.5);
+width:100%;max-width:420px;
+background:#ffffffEE;
 border-radius:32px;
-padding:42px 30px 30px;
+padding:42px 28px 28px;
 text-align:center;
-border:1.5px solid rgba(255,255,255,0.85);
-box-shadow:
-0 0 0 1px rgba(255,255,255,0.6) inset,
-0 20px 60px rgba(90,60,20,0.15),
-0 10px 25px rgba(90,60,20,0.1);
-transform:perspective(1200px) rotateY(-3deg) rotateX(3deg);
-transform-style:preserve-3d;
+border:2px solid #ffffff;
+box-shadow:0 25px 70px rgba(90,60,20,0.22),0 0 0 1px rgba(255,255,255,0.8) inset;
+transform:perspective(1000px) rotateY(-2deg);
 }
-.avatar-wrap{
-width:132px;height:132px;margin:0 auto 22px;
+.avatar-wrap{width:132px;height:132px;margin:0 auto 22px;}
+.avatar-ring{
+width:100%;height:100%;border-radius:26px;padding:3px;
+background:linear-gradient(135deg,#ffd67e,#ffb84d,#ffd67e);
+box-shadow:0 0 20px rgba(255,184,77,0.6);
+}
+.avatar{width:100%;height:100%;border-radius:23px;overflow:hidden;background:#fff}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+h1{font-family:Georgia,serif;font-size:32px;color:#1a1a1a}
+.ceo{color:#c9a04a;font-size:17px;margin:6px 0 10px}
+.bio{color:#666;font-size:14px;margin-bottom:26px}
+.links{display:flex;flex-direction:column;gap:12px}
+.link{
+display:flex;justify-content:space-between;align-items:center;
+padding:17px 20px;
+background:#fff;
+border-radius:18px;
+color:#1a1a1a;text-decoration:none;font-weight:700;
+border:1px solid #eee;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+transition:all 0.25s ease;
+}
+.link:active{transform:scale(1.08);border-color:#ffd67e;box-shadow:0 0 0 2px #ffd67e,0 0 25px #ffd67eAA}
+.footer{margin-top:22px;font-size:10px;color:#a08a5a;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="avatar-wrap"><div class="avatar-ring"><div class="avatar"><img src="IMG-20261028-WA0030.jpg" alt="Abdulrahman"></div></div></div>
+<h1>Abdulrahman Ehab</h1>
+<div class="ceo">CEO & Founder</div>
+<div class="bio">CEO & Entrepreneur • Young Business Leader</div>
+<div class="links">
+<a class="link" href="https://www.tiktok.com/@Abdulrahman_Ehab37">🎵 TikTok <span>↗</span></a>
+<a class="link" href="https://www.instagram.com/Abdulrahman_Ehab37">📸 Instagram <span>↗</span></a>
+<a class="link" href="https://www.facebook.com/Abdulrahman.Ehab.37">📘 Facebook <span>↗</span></a>
+<a class="link" href="https://wa.me/201210746111">💬 WhatsApp <span>↗</span></a>
+</div>
+<div class="footer">GOLDEN HOUR • WHITE GLASS • CEO 2026</div>
+</div>
+</body>
+</html>
