@@ -6,22 +6,22 @@
 <title>Abdulrahman Ehab - CEO</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;background:#070e1f;font-family:Inter,system-ui}
-.card{width:100%;max-width:440px;background:linear-gradient(180deg,#132040,#0e1a33);border-radius:36px;padding:38px 28px 28px;text-align:center;border:1px solid rgba(217,184,108,0.18);box-shadow:0 30px 80px rgba(0,0,0,0.6)}
-.avatar{width:150px;height:150px;margin:0 auto 18px;border-radius:28px;overflow:hidden;border:3px solid #d9b86c;box-shadow:0 10px 35px rgba(0,0,0,0.5)}
-.avatar img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-h1{font-size:32px;color:#e8d5a3;font-weight:900;letter-spacing:-0.5px}
-.handle{color:#8ea0c2;margin:6px 0 4px;font-size:14px}
+body{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;background:#070e1f;font-family:system-ui}
+.card{width:100%;max-width:440px;background:linear-gradient(180deg,#132040,#0e1a33);border-radius:36px;padding:38px 28px 28px;text-align:center;border:1px solid #d9b86c4d;box-shadow:0 30px 80px #0009}
+.avatar{width:150px;height:150px;margin:0 auto 18px;border-radius:28px;overflow:hidden;border:3px solid #d9b86c;box-shadow:0 10px 35px #0006}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+h1{font-size:32px;color:#e8d5a3;font-weight:900}
+.handle{color:#8ea0c2;margin:6px 0 4px}
 .sub{color:#d9b86c;letter-spacing:3px;font-size:11px;margin-bottom:26px;text-transform:uppercase}
 .links{display:flex;flex-direction:column;gap:16px;perspective:1200px}
-.link{position:relative;display:flex;align-items:center;justify-content:space-between;padding:19px 22px;background:rgba(0,0,0,0.4);border-radius:18px;color:#fff;text-decoration:none;font-weight:800;border:1px solid rgba(255,215,128,0.18);transform-style:preserve-3d;transition:all 0.2s cubic-bezier(0.34,1.56,0.64,1)}
-.link.suck{transform:perspective(900px) scale(1.12) translateZ(70px) rotateX(8deg) rotateY(-5deg);border-color:#ffd67e;background:rgba(20,35,70,0.9);box-shadow:0 0 0 2px #ffd67e, 0 0 20px #ffd67e, 0 0 50px rgba(255,214,126,0.7), 0 30px 60px rgba(0,0,0,0.7)}
+.link{display:flex;justify-content:space-between;padding:19px 22px;background:#0006;border-radius:18px;color:#fff;text-decoration:none;font-weight:800;border:1px solid #d9b86c2e;transform-style:preserve-3d;transition:all .2s cubic-bezier(0.34,1.56,0.64,1)}
+.link.suck{transform:perspective(900px) scale(1.12) translateZ(70px) rotateX(8deg) rotateY(-5deg);border-color:#ffd67e;background:#142346;box-shadow:0 0 0 2px #ffd67e,0 0 20px #ffd67e,0 0 50px #ffd67e99,0 30px 60px #000a}
 .footer{font-size:9px;letter-spacing:3px;color:#5a6a8a;margin-top:24px}
 </style>
 </head>
 <body>
 <div class="card">
-<div class="avatar"><img src="profile.jpg" alt="Abdulrahman Ehab"></div>
+<div class="avatar"><img src="IMG-20261028-WA0030.jpg" alt="Abdulrahman Ehab"></div>
 <h1>Abdulrahman Ehab</h1>
 <div class="handle">@Abdulrahman_Ehab37</div>
 <div class="sub">CEO & Entrepreneur • Young Business Leader</div>
@@ -34,13 +34,11 @@ h1{font-size:32px;color:#e8d5a3;font-weight:900;letter-spacing:-0.5px}
 <div class="footer">GOLD • 3D • SUCTION • CEO 2026</div>
 </div>
 <script>
-document.querySelectorAll('.link').forEach(btn=>{
-btn.addEventListener('touchstart',()=>btn.classList.add('suck'));
-btn.addEventListener('touchend',()=>setTimeout(()=>btn.classList.remove('suck'),450));
-btn.addEventListener('mousedown',()=>btn.classList.add('suck'));
-btn.addEventListener('mouseup',()=>setTimeout(()=>btn.classList.remove('suck'),300));
-btn.addEventListener('mouseenter',()=>btn.classList.add('suck'));
-btn.addEventListener('mouseleave',()=>btn.classList.remove('suck'));
+document.querySelectorAll('.link').forEach(b=>{
+b.addEventListener('touchstart',()=>b.classList.add('suck'));
+b.addEventListener('touchend',()=>setTimeout(()=>b.classList.remove('suck'),450));
+b.addEventListener('mouseenter',()=>b.classList.add('suck'));
+b.addEventListener('mouseleave',()=>b.classList.remove('suck'));
 });
 </script>
 </body>
