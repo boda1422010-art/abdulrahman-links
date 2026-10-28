@@ -6,13 +6,23 @@
 <title>Abdulrahman Ehab</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{min-height:100vh;background:linear-gradient(135deg,#a8c8e8,#e8d5d8);display:flex;justify-content:center;align-items:center;padding:20px;font-family:Arial}
-.card{width:100%;max-width:360px;background:rgba(255,255,255,0.65);backdrop-filter:blur(20px);border-radius:32px;padding:0 24px 28px;text-align:center;margin-top:60px;box-shadow:0 20px 60px rgba(0,0,0,0.15)}
-.avatar-wrap{width:130px;height:130px;margin:-65px auto 16px;background:#fff;padding:4px;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+body{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;font-family:Arial;background:#000;position:relative;overflow:hidden}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:url('IMG-20261028-WA0030.jpg') center/cover no-repeat;
+filter:blur(30px) brightness(0.5);
+transform:scale(1.2);
+z-index:-1;
+}
+.card{width:100%;max-width:360px;background:rgba(255,255,255,0.75);backdrop-filter:blur(20px);border-radius:32px;padding:0 24px 28px;text-align:center;margin-top:60px;box-shadow:0 20px 80px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.3)}
+.avatar-wrap{width:130px;height:130px;margin:-65px auto 16px;background:#fff;padding:4px;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,0.4)}
 .avatar-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover}
-h1{font-size:28px;color:#1a2744}
-p{color:#4a5a7a;margin-bottom:20px}
-.link{display:block;padding:15px;margin-bottom:12px;background:#fff;border-radius:99px;color:#111;text-decoration:none;font-weight:bold;text-align:center}
+h1{font-size:28px;color:#0f172a}
+p{color:#475569;margin-bottom:20px}
+.link{display:block;padding:15px;margin-bottom:12px;background:#fff;border-radius:99px;color:#111;text-decoration:none;font-weight:bold;text-align:center;transition:0.2s}
+.link:hover{transform:scale(1.03)}
 .link.wa{background:#111;color:#fff}
 </style>
 </head>
@@ -21,11 +31,4 @@ p{color:#4a5a7a;margin-bottom:20px}
 <div class="avatar-wrap"><img src="IMG-20261028-WA0030.jpg"></div>
 <h1>Abdulrahman Ehab</h1>
 <p>@Abdulrahman_Ehab37</p>
-<a class="link" href="https://www.tiktok.com/@Abdulrahman_Ehab37">TikTok 🎵</a>
-<a class="link" href="https://www.instagram.com/Abdulrahman_Ehab37">Instagram 📸</a>
-<a class="link" href="https://www.facebook.com/Abdulrahman.Ehab.37">Facebook 📘</a>
-<a class="link wa" href="https://wa.me/201210746111">WhatsApp 💬</a>
-<a class="link" href="tel:+201018496893">01018496893 📞</a>
-</div>
-</body>
-</html>
+<a class="link" href="https://
